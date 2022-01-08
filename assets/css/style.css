@@ -15,6 +15,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -22,6 +30,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -45,6 +54,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero{
@@ -55,6 +65,8 @@ header nav ul li a {
     background-image: url("../images/hero-bg.jpeg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     align-items: flex-start;
 }
 
@@ -71,17 +83,20 @@ header nav ul li a {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form{
     color: #024e76;
-    background: #fce138;
+    background: rgba(252, 225, 56, 0.8);
     padding: 20px;
     border: 3px solid #024e76;
     width: 40%;
     margin: 3.5%;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
+
 
 .hero-form p {
     margin: 5px 0 15px 0;
@@ -100,6 +115,7 @@ header nav ul li a {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .hero-form label {
@@ -112,6 +128,7 @@ header nav ul li a {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 15px;
 }
 
 .intro p {
@@ -141,6 +158,9 @@ header nav ul li a {
     border-color: #39a6b2;
 }
 
+.steps {
+    background: #fce138;
+}
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -150,7 +170,6 @@ header nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background: #fce138;
 }
 
 .step h3 {
@@ -291,6 +310,7 @@ header nav ul li a {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 15px;
 }
 
 .contact-form button {
@@ -301,6 +321,7 @@ header nav ul li a {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 15px;
 }
 
 footer {
@@ -337,6 +358,7 @@ footer a {
    header {
        padding-bottom: 0;
        justify-content: center;
+       position: relative;
    }
 
    header h1 {
@@ -378,6 +400,7 @@ footer a {
    .contact-info iframe {
        flex: 1 100%;
    }
+
 }
 
 /* media query for tablets and smaller */
